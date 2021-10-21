@@ -1,0 +1,18 @@
+{
+  "controls": {
+    "#idp": {
+      "id": "#idp",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "Intusion Detection/Prevention",
+      "description": "",
+      "custom": {}
+    },
+    "#server": {
+      "id": "#server",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "",
+      "description": "",
+      "custom": {}
+    }
+  }
+}

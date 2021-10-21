@@ -1,0 +1,23 @@
+@component External:User (#user)
+@component MyApp:Web:Server (#server)
+@component MyApp:Web:Database (#database)
+
+@connects #user to #server with HTTPs/GET-Request
+@connects #server to #user with HTTPs/GET-Response
+@connects #server to #database with SQL Query
+@connects #database to #server with SQL Response
+
+@threat SQL Injection (#sqlinjection)
+@exposes #server to SQL Injection with not checking the input
+
+@control Intusion Detection/Prevention (#idp)
+@threat DDOS (#ddos)
+@exposes #server to Out of service with not using IDP
+@mitigates #server against #ddos with #idp
+
+@accepts #sqlinjection to #server with Guest Accounts
+
+@transfers #sqlinjection from #server to #database with developer not checking the input
+@tests #server for XSS
+
+@review #database to check if passwords are stored hashed

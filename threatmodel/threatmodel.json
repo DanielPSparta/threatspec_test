@@ -1,0 +1,163 @@
+{
+  "mitigations": [
+    {
+      "control": "#idp",
+      "threat": "#ddos",
+      "component": "#server",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@mitigates #server against #ddos with #idp",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 16
+      }
+    }
+  ],
+  "exposures": [
+    {
+      "threat": "#sql_injection",
+      "component": "#server",
+      "details": "not checking the input",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@exposes #server to SQL Injection with not checking the input",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 11
+      }
+    },
+    {
+      "threat": "#out_of_service",
+      "component": "#server",
+      "details": "not using IDP",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@exposes #server to Out of service with not using IDP",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 15
+      }
+    }
+  ],
+  "transfers": [
+    {
+      "threat": "#sqlinjection",
+      "source_component": "#server",
+      "destination_component": "#database",
+      "details": "developer not checking the input",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@transfers #sqlinjection from #server to #database with developer not checking the input",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 20
+      }
+    }
+  ],
+  "acceptances": [
+    {
+      "threat": "#sqlinjection",
+      "component": "#server",
+      "details": "Guest Accounts",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@accepts #sqlinjection to #server with Guest Accounts",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 18
+      }
+    }
+  ],
+  "connections": [
+    {
+      "source_component": "#user",
+      "destination_component": "#server",
+      "direction": "to",
+      "details": "HTTPs/GET-Request",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@connects #user to #server with HTTPs/GET-Request",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 5
+      }
+    },
+    {
+      "source_component": "#server",
+      "destination_component": "#user",
+      "direction": "to",
+      "details": "HTTPs/GET-Response",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@connects #server to #user with HTTPs/GET-Response",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 6
+      }
+    },
+    {
+      "source_component": "#server",
+      "destination_component": "#database",
+      "direction": "to",
+      "details": "SQL Query",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@connects #server to #database with SQL Query",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 7
+      }
+    },
+    {
+      "source_component": "#database",
+      "destination_component": "#server",
+      "direction": "to",
+      "details": "SQL Response",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@connects #database to #server with SQL Response",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 8
+      }
+    }
+  ],
+  "reviews": [
+    {
+      "component": "#database",
+      "details": "to check if passwords are stored hashed",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@review #database to check if passwords are stored hashed",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 23
+      }
+    }
+  ],
+  "tests": [
+    {
+      "component": "#xss",
+      "control": "#server",
+      "description": "",
+      "custom": {},
+      "source": {
+        "annotation": "@tests #server for XSS",
+        "code": "",
+        "filename": "/home/kali/cyber/projects2/myapp/design/plan.txt",
+        "line": 21
+      }
+    }
+  ],
+  "run_id": "1e89588be7ba4a95966e2e8becac945b"
+}

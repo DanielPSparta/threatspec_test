@@ -1,0 +1,46 @@
+{
+  "threats": {
+    "#sqlinjection": {
+      "id": "#sqlinjection",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "SQL Injection",
+      "description": "",
+      "custom": {}
+    },
+    "#password_bypass": {
+      "id": "#password_bypass",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "password bypass",
+      "description": "",
+      "custom": {}
+    },
+    "#sql_injection": {
+      "id": "#sql_injection",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "SQL Injection",
+      "description": "",
+      "custom": {}
+    },
+    "#ddos": {
+      "id": "#ddos",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "DDOS",
+      "description": "",
+      "custom": {}
+    },
+    "#out_of_server": {
+      "id": "#out_of_server",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "Out of server",
+      "description": "",
+      "custom": {}
+    },
+    "#out_of_service": {
+      "id": "#out_of_service",
+      "run_id": "1e89588be7ba4a95966e2e8becac945b",
+      "name": "Out of service",
+      "description": "",
+      "custom": {}
+    }
+  }
+}
